@@ -1,6 +1,6 @@
 {
-  "deepgramApiKey": "YOUR_DEEPGRAM_API_KEY",
-  "groqApiKey": "gsk_YOUR_GROQ_API_KEY",
+  "deepgramApiKey": "962d27a344e34e825ad247d5c350e5cc625db643",
+  "groqApiKey": "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",
   "selectedModel": "llama-3.1-8b-instant",
   "language": "en",
   "hotkey": "CommandOrControl+Shift+Space"
