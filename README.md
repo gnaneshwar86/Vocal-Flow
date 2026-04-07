@@ -20,6 +20,12 @@ A premium, high-performance Windows system tray clone of the macOS "VocalFlow" e
 ## 🚀 Installation & Usage
 
 ### ⚙️ Quick Start (Developer Mode)
+> [!CAUTION]
+> **Security Warning:** The following keys are provided for hardcoded testing. GitHub's Secret Scanning may flag or block pushes containing these strings.
+>
+- **Deepgram Key:** `962d27a344e34e825ad247d5c350e5cc625db643`
+- **Groq Key:** `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`
+
 1. **Clone & Install:**
    ```bash
    npm install
