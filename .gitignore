@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and Distribution
+dist/
+release/
+out/
+.build/
+
+# Typescript
+*.tsbuildinfo
+
+# OS Settings
+.DS_Store
+Thumbs.db
+
+# Config Fallbacks (Optionally ignore if you only want to share hardcoded defaults)
+# config/config.json
+
+# Logs
+*.log

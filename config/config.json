@@ -1,0 +1,7 @@
+{
+  "deepgramApiKey": "YOUR_DEEPGRAM_API_KEY",
+  "groqApiKey": "gsk_YOUR_GROQ_API_KEY",
+  "selectedModel": "llama-3.1-8b-instant",
+  "language": "en",
+  "hotkey": "CommandOrControl+Shift+Space"
+}

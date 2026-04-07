@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocalFlow Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>VocalFlow</h1>
+                <p style="font-size: 11px; color: var(--text-dim); margin-top: 4px; font-weight: 600; text-transform: uppercase;">Next-Gen Voice Transcription</p>
+            </div>
+            <div id="statusBadge" class="badge">Idle</div>
+        </header>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h3>Deepgram Credits</h3>
+                <p id="dgBalance">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Groq Tokens</h3>
+                <p id="groqBalance">Loading...</p>
+            </div>
+        </div>
+
+        <form id="settingsForm">
+            <h2 style="font-size: 14px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px;">Configuration</h2>
+            
+            <div class="form-group">
+                <label for="deepgramApiKey">Deepgram Secret Key</label>
+                <input type="password" id="deepgramApiKey" placeholder="dg_xxxxxxxxxxxxxxxxxxxxxxxx">
+            </div>
+            
+            <div class="form-group">
+                <label for="groqApiKey">Groq API Key</label>
+                <input type="password" id="groqApiKey" placeholder="gsk_xxxxxxxxxxxxxxxxxxxxxxxx">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div class="form-group">
+                    <label for="selectedModel">Llama Inference</label>
+                    <select id="selectedModel">
+                        <option value="llama-3.1-8b-instant">3.1 8B Instant</option>
+                        <option value="llama-3.3-70b-versatile">3.3 70B Turbo</option>
+                        <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hotkey">Global Hotkey</label>
+                    <select id="hotkey">
+                        <option value="CommandOrControl+Shift+Space">Ctrl+Shift+Space</option>
+                        <option value="Alt+Shift+C">Alt+Shift+C</option>
+                        <option value="Shift+Space">Shift+Space</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <button type="submit" class="btn">Apply Changes</button>
+                <button type="button" id="quitBtn" class="btn btn-danger">Exit Application</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        require('../../dist/renderer/settings.js');
+    </script>
+</body>
+</html>
